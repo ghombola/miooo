@@ -1,0 +1,64 @@
+name: sora_elite
+description: "Sora Elite — Multi-feature cross-platform app."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.9.2 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # آیکون‌ها و گرافیک‌ها
+  cupertino_icons: ^1.0.8
+  font_awesome_flutter: ^11.0.0
+  flutter_svg: ^2.2.2
+  url_launcher: ^6.3.2
+  shared_preferences: ^2.3.3
+  bip39: ^1.0.6
+  clipboard: ^2.0.2
+  google_fonts: ^6.3.2
+  http: ^1.2.2
+  intl: ^0.20.2
+
+  # انیمیشن‌ها و جلوه‌ها
+  animations: ^2.0.8
+  shimmer: ^3.0.0
+  iconsax_flutter: ^1.0.1
+  iconify_flutter: ^0.0.7
+  iconsax: ^0.0.8
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  flutter_launcher_icons: ^0.14.4
+
+flutter:
+  uses-material-design: true
+
+  # مسیر دارایی‌ها (Assets)
+  assets:
+    - assets/
+    - assets/icons/
+    - assets/background_image.webp
+
+flutter_launcher_icons:
+  image_path: "assets/icon.png"
+  android: true
+  ios: true
+  remove_alpha_ios: true
+  web:
+    generate: true
+    image_path: "assets/icon.png"
+  windows:
+    generate: true
+    image_path: "assets/icon.png"
+  macos:
+    generate: true
+    image_path: "assets/icon.png"
+  linux:
+    generate: true
+    image_path: "assets/icon.png"
